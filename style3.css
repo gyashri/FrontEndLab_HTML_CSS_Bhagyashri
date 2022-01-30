@@ -1,0 +1,154 @@
+body {
+    height: auto;
+    background-color: lightgray;
+}
+
+header {
+    text-align: right;
+    background-color: red;
+    margin: 0%;
+    padding: 20px;
+}
+
+#navigate {
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.menu li:nth-child(2):hover #dropdown1,
+.menu li:nth-child(3):hover #dropdown2 {
+    display: block;
+}
+
+#dropdown1,
+#dropdown2 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+
+#dropdown1 li,
+#dropdown2 li {
+    display: block;
+}
+
+#dropdown1 li a,
+#dropdown2 li a {
+    color: steelblue;
+    font-size: 15px;
+}
+
+#dropdown1 li a:hover,
+#dropdown2 li a:hover {
+    background-color: gainsboro;
+}
+
+#section1 {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+#section1 article {
+    display: inline-block;
+}
+
+p {
+    padding-left: 20px;
+}
+
+div {
+    width: 40px;
+    height: 300px;
+    margin: 20px;
+    background-color: rgb(202, 198, 192);
+}
+
+#bar1 {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    animation-name: baranimation1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes baranimation1 {
+    0% {
+        height: 100%;
+        background-color: white;
+    }
+
+    100% {
+        height: 70%;
+        background-color: white;
+    }
+}
+
+#bar2 {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    animation-name: baranimation2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes baranimation2 {
+    0% {
+        height: 100%;
+        background-color: white;
+    }
+
+    100% {
+        height: 60%;
+        background-color: white;
+    }
+}
+
+#bar3 {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    animation-name: baranimation3;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes baranimation3 {
+    0% {
+        height: 100%;
+        background-color: white;
+    }
+
+    100% {
+        height: 20%;
+        background-color: white;
+    }
+}
